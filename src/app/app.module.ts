@@ -45,9 +45,9 @@ import { PagesModule } from './pages/pages.module';
     HttpClientModule,
     PagesModule,
 
+    AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule,
     AngularFireDatabaseModule,
-    AngularFireModule.initializeApp(environment.firebaseConfig),
     
     MdToolbarModule, MdIconModule,
     MdSidenavModule, MdMenuModule, MdButtonModule

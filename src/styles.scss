@@ -1,4 +1,5 @@
-/* You can add global styles to this file, and also import other style files */
+@import "./styles/loading.scss";
+@import "./styles/spiner.scss";
 @import '~@angular/material/prebuilt-themes/indigo-pink.css';
 
 // deeppurple-amber.css
@@ -12,4 +13,3 @@ body {
     margin: 0 auto;
     padding: 0 auto;
 }
-
