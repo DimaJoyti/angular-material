@@ -7,11 +7,11 @@ import { HttpModule } from "@angular/http";
 import { HttpClientModule } from "@angular/common/http";
 
 import {
-  MdToolbarModule,
-  MdSidenavModule,
-  MdMenuModule,
-  MdButtonModule,
-  MdIconModule
+  MatToolbarModule,
+  MatSidenavModule,
+  MatMenuModule,
+  MatButtonModule,
+  MatIconModule
 } from "@angular/material";
 
 import "hammerjs";
@@ -28,6 +28,7 @@ import { FooterComponent } from "./ui/footer/footer.component";
 import { SidenavComponent } from './ui/sidenav/sidenav.component';
 
 import { PagesModule } from './pages/pages.module';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { PagesModule } from './pages/pages.module';
   imports: [
     BrowserModule.withServerTransition({ appId: "APP_ID" }),
     BrowserAnimationsModule,
+    FlexLayoutModule,
     RoutingModule,
     FormsModule,
     HttpModule,
@@ -49,8 +51,8 @@ import { PagesModule } from './pages/pages.module';
     AngularFireAuthModule,
     AngularFireDatabaseModule,
     
-    MdToolbarModule, MdIconModule,
-    MdSidenavModule, MdMenuModule, MdButtonModule
+    MatToolbarModule, MatIconModule,
+    MatSidenavModule, MatMenuModule, MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

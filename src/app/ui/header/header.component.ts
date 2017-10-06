@@ -1,5 +1,5 @@
 import { Component, NgModule } from "@angular/core";
-import { MdToolbarModule, MdMenuModule, MdButtonModule, MdIconModule } from "@angular/material";
+import { MatToolbarModule, MatMenuModule, MatButtonModule, MatIconModule } from "@angular/material";
 
 @Component({
   selector: 'header',
@@ -9,7 +9,7 @@ import { MdToolbarModule, MdMenuModule, MdButtonModule, MdIconModule } from "@an
 export class HeaderComponent{}
 
 @NgModule({
-  imports: [MdMenuModule, MdToolbarModule, MdButtonModule, MdIconModule],
+  imports: [MatMenuModule, MatToolbarModule, MatButtonModule, MatIconModule],
   exports: [HeaderComponent],
   declarations: [HeaderComponent],
 })
