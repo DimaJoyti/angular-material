@@ -5,22 +5,13 @@ import { FormsModule } from "@angular/forms";
 import { RoutingModule } from "./app.routing.module";
 import { HttpModule } from "@angular/http";
 import { HttpClientModule } from "@angular/common/http";
-
-import {
-  MatToolbarModule,
-  MatSidenavModule,
-  MatMenuModule,
-  MatButtonModule,
-  MatIconModule
-} from "@angular/material";
-import "hammerjs";
+import { MaterialModule } from './material.module';
+import { PagesModule } from './pages/pages.module';
 
 import { AppComponent } from "./app.component";
 import { HeaderComponent } from './ui/header/header.component';
 import { FooterComponent } from "./ui/footer/footer.component";
 import { SidenavComponent } from './ui/sidenav/sidenav.component';
-
-import { PagesModule } from './pages/pages.module';
 
 
 @NgModule({
@@ -37,11 +28,8 @@ import { PagesModule } from './pages/pages.module';
     FormsModule,
     HttpModule,
     HttpClientModule,
-    PagesModule,
-    
-    MatToolbarModule, MatIconModule, 
-    MatSidenavModule, MatMenuModule, 
-    MatButtonModule
+    MaterialModule,
+    PagesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

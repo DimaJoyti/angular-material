@@ -6,13 +6,13 @@ import { ProductComponent } from "./product/product.component";
 import { ProfileComponent } from "./profile/profile.component";
 import { PostsComponent } from './posts/posts.component';
 
-import { MatGridListModule } from '@angular/material';
+import { MaterialModule } from './../material.module';
 import { DataService } from "../services/data.service";
 
 @NgModule({
   imports: [
     CommonModule, 
-    MatGridListModule
+    MaterialModule
   ],
   declarations: [
     ProductComponent,
