@@ -7,7 +7,6 @@ import { LoginComponent } from "./pages/login/login.component";
 const routes: Routes = [
   { path: '', component: ProductComponent },
   { path: 'login', component: LoginComponent, },
-  // { path: 'lazy', loadChildren: './lazy/lazy.module#LazyModule' },
   { path: '**', redirectTo: '' }
 ];
 

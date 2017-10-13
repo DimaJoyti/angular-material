@@ -7,6 +7,7 @@ import { HttpModule } from "@angular/http";
 import { HttpClientModule } from "@angular/common/http";
 import { MaterialModule } from './material.module';
 import { PagesModule } from './pages/pages.module';
+import { CoreModule } from "./services/core.module";
 
 import { AppComponent } from "./app.component";
 import { HeaderComponent } from './ui/header/header.component';
@@ -29,7 +30,8 @@ import { SidenavComponent } from './ui/sidenav/sidenav.component';
     HttpModule,
     HttpClientModule,
     MaterialModule,
-    PagesModule
+    PagesModule,
+    CoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]

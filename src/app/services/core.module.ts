@@ -1,10 +1,22 @@
-import { NgModule } from '@angular/core';
+import { NgModule } from "@angular/core";
+import { AuthService } from "./auth/auth.service";
 
-import { AuthService } from './auth.service';
-import { AngularFireAuthModule } from 'angularfire2/auth';
+import { AngularFireModule } from "angularfire2";
+import { AngularFireAuthModule } from "angularfire2/auth";
+import { AngularFirestoreModule } from "angularfire2/firestore";
+import { AngularFireDatabaseModule } from "angularfire2/database";
+
+export const firebaseConfig = environment.firebaseConfig;
+import { environment } from "../../environments/environment";
+
 
 @NgModule({
-  providers: [AuthService],
-  imports: [AngularFireAuthModule]
+  imports: [
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireAuthModule,
+    AngularFirestoreModule,
+    AngularFireDatabaseModule
+  ],
+  providers: [AuthService]
 })
-export class CoreModule { }
+export class CoreModule {}
