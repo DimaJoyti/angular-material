@@ -3,7 +3,6 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { NgModule } from "@angular/core";
 import { FormsModule } from "@angular/forms";
 import { RoutingModule } from "./app.routing.module";
-import { HttpModule } from "@angular/http";
 import { HttpClientModule } from "@angular/common/http";
 import { MaterialModule } from './material.module';
 import { PagesModule } from './pages/pages.module';
@@ -27,7 +26,6 @@ import { SidenavComponent } from './ui/sidenav/sidenav.component';
     BrowserAnimationsModule,
     RoutingModule,
     FormsModule,
-    HttpModule,
     HttpClientModule,
     MaterialModule,
     PagesModule,
