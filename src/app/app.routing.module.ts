@@ -6,9 +6,9 @@ import { ChatDialogComponent } from './chat/chat-dialog/chat-dialog.component';
 
 
 const routes: Routes = [
-  { path: '', component: ProductComponent },
+  { path: '',      component: ProductComponent },
   { path: 'login', component: LoginComponent, },
-  { path: 'chat', component: ChatDialogComponent, },
+  { path: 'chat',  component: ChatDialogComponent, },
   { path: '**', redirectTo: '' }
 ];
 

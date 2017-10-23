@@ -7,7 +7,6 @@ import { ProfileComponent } from "./profile/profile.component";
 import { PostsComponent } from './posts/posts.component';
 
 import { MaterialModule } from './../material.module';
-import { DataService } from "../services/data.service";
 
 @NgModule({
   imports: [
@@ -21,6 +20,6 @@ import { DataService } from "../services/data.service";
     ProfileComponent,
     PostsComponent
   ],
-  providers: [DataService]
+  providers: []
 })
 export class PagesModule {}

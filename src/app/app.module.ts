@@ -10,9 +10,9 @@ import { CoreModule } from "./services/core.module";
 import { ChatModule } from './chat/chat.module';
 
 import { AppComponent } from "./app.component";
-import { HeaderComponent } from './ui/header/header.component';
-import { FooterComponent } from "./ui/footer/footer.component";
-import { SidenavComponent } from './ui/sidenav/sidenav.component';
+import { HeaderComponent } from './layout/header/header.component';
+import { FooterComponent } from "./layout/footer/footer.component";
+import { SidenavComponent } from './layout/sidenav/sidenav.component';
 
 
 @NgModule({
