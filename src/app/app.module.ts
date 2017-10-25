@@ -9,10 +9,17 @@ import { PagesModule } from './pages/pages.module';
 import { CoreModule } from "./services/core.module";
 import { ChatModule } from './chat/chat.module';
 
+import { AngularFireModule } from "angularfire2";
+import { AngularFireDatabaseModule } from "angularfire2/database";
+import { AngularFireAuthModule } from "angularfire2/auth";
+export const firebaseConfig = environment.firebaseConfig;
+import { environment } from "../environments/environment";
+
 import { AppComponent } from "./app.component";
 import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from "./layout/footer/footer.component";
 import { SidenavComponent } from './layout/sidenav/sidenav.component';
+import { MessagingService } from "./services/massaging/messaging.service";
 
 
 @NgModule({
@@ -31,9 +38,12 @@ import { SidenavComponent } from './layout/sidenav/sidenav.component';
     MaterialModule,
     PagesModule,
     CoreModule,
-    ChatModule
+    ChatModule,
+    AngularFireAuthModule,
+    AngularFireDatabaseModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
   ],
-  providers: [],
+  providers: [MessagingService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
