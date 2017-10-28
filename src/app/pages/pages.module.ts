@@ -5,8 +5,7 @@ import { RegistrationComponent } from "./registration/registration.component";
 import { ProductComponent } from "./product/product.component";
 import { ProfileComponent } from "./profile/profile.component";
 import { PostsComponent } from './posts/posts.component';
-
-import { MaterialModule } from './../material.module';
+import { MaterialModule } from "../services/material.module";
 
 @NgModule({
   imports: [

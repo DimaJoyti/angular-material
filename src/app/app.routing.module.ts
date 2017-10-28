@@ -9,7 +9,7 @@ const routes: Routes = [
   { path: '',      component: ProductComponent },
   { path: 'login', component: LoginComponent, },
   { path: 'chat',  component: ChatDialogComponent, },
-  { path: '**', redirectTo: '' }
+  { path: '**',    redirectTo: '' }
 ];
 
 @NgModule({

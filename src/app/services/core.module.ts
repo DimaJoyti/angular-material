@@ -9,7 +9,6 @@ import { AngularFireDatabaseModule } from "angularfire2/database";
 export const firebaseConfig = environment.firebaseConfig;
 import { environment } from "../../environments/environment";
 
-
 @NgModule({
   imports: [
     AngularFireModule.initializeApp(environment.firebaseConfig),
