@@ -1,3 +1,4 @@
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from "@angular/core";
 import { CdkTableModule } from "@angular/cdk/table";
 import {
@@ -39,6 +40,8 @@ import "hammerjs";
  */
 @NgModule({
   imports: [
+    BrowserAnimationsModule,
+
     CdkTableModule,
 
     MatAutocompleteModule,

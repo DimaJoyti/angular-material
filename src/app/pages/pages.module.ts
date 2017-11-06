@@ -6,6 +6,8 @@ import { ProductComponent } from "./product/product.component";
 import { ProfileComponent } from "./profile/profile.component";
 import { PostsComponent } from './posts/posts.component';
 import { MaterialModule } from "../services/material.module";
+import { TableComponent } from './table/table.component';
+import { TableService } from './../services/table/table.service';
 
 @NgModule({
   imports: [
@@ -17,8 +19,9 @@ import { MaterialModule } from "../services/material.module";
     LoginComponent,
     RegistrationComponent,
     ProfileComponent,
-    PostsComponent
+    PostsComponent,
+    TableComponent
   ],
-  providers: []
+  providers: [TableService]
 })
 export class PagesModule {}
