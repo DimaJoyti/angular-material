@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ChatService, Message } from '../chat.service';
+import { ChatService, Message } from '../service/chat.service';
+
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/scan';
 

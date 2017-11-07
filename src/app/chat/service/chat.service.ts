@@ -1,20 +1,22 @@
 import { Injectable } from "@angular/core";
-import { environment } from "../../environments/environment";
-
 import { ApiAiClient } from "api-ai-javascript";
+import { environment } from "../../../environments/environment.prod";
 
 import { Observable } from "rxjs/Observable";
 import { BehaviorSubject } from "rxjs/BehaviorSubject";
 
 // Message class for displaying messages in the component
 export class Message {
-  constructor(public content: string, public sentBy: string) {}
+  constructor(
+    public content: string, 
+    public sentBy: string
+  ) {}
 }
 
 @Injectable()
 export class ChatService {
-  readonly token = environment.dialogflow.angularBot;
-  readonly client = new ApiAiClient({ accessToken: this.token });
+  // readonly token = environment.dialogflow.angularBot;
+  // readonly client = new ApiAiClient({ accessToken: this.token });
 
   conversation = new BehaviorSubject<Message[]>([]);
 
