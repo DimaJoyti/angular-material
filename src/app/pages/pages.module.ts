@@ -8,6 +8,9 @@ import { PostsComponent } from './posts/posts.component';
 import { MaterialModule } from "../services/material.module";
 import { TableComponent } from './table/table.component';
 import { TableService } from './../services/table/table.service';
+import { ContentfulService } from "./content/service/contentful.service";
+import { MdToHtmlPipe } from './content/pipe/md-to-html.pipe';
+import { ContentComponent } from './content/component/content/content.component';
 
 @NgModule({
   imports: [
@@ -16,12 +19,14 @@ import { TableService } from './../services/table/table.service';
   ],
   declarations: [
     ProductComponent,
+    ContentComponent,
     LoginComponent,
     RegistrationComponent,
     ProfileComponent,
     PostsComponent,
-    TableComponent
+    TableComponent,
+    MdToHtmlPipe,
   ],
-  providers: [TableService]
+  providers: [TableService, ContentfulService]
 })
 export class PagesModule {}
