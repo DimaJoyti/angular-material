@@ -41,7 +41,6 @@ import "hammerjs";
 @NgModule({
   imports: [
     BrowserAnimationsModule,
-
     CdkTableModule,
 
     MatAutocompleteModule,
@@ -75,6 +74,7 @@ import "hammerjs";
   ],
   exports: [
     // CDk
+    BrowserAnimationsModule,
     CdkTableModule,
 
     // Material

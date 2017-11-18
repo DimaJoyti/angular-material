@@ -8,17 +8,17 @@
       "outDir": "dist",
       "assets": [
         "assets",
-         "favicon.ico",
-         "firebase-messaging-sw.js",
-         "manifest.json"
-        ],
+        "favicon.ico",
+        "firebase-messaging-sw.js",
+        "manifest.json"
+      ],
       "index": "index.html",
       "main": "main.ts",
       "polyfills": "polyfills.ts",
       "test": "test.ts",
       "tsconfig": "tsconfig.app.json",
       "testTsconfig": "tsconfig.spec.json",
-      "styles": ["styles.scss"],
+      "styles": ["styles.scss", "theme.scss"],
       "scripts": [],
       "prefix": "",
       "environmentSource": "environments/environment.ts",
