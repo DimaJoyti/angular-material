@@ -3,6 +3,7 @@ import { NgModule } from "@angular/core";
 import { FormsModule } from "@angular/forms";
 import { RoutingModule } from "./app.routing.module";
 import { HttpClientModule } from "@angular/common/http";
+import { AgmCoreModule } from '@agm/core';
 
 import { MaterialModule } from "./services/material.module";
 import { PagesModule } from "./pages/pages.module";
@@ -23,6 +24,7 @@ import { MessagingService } from "./services/massaging/messaging.service";
     SidenavComponent
   ],
   imports: [
+    AgmCoreModule,
     BrowserModule.withServerTransition({ appId: "APP_ID" }),
     RoutingModule,
     FormsModule,
