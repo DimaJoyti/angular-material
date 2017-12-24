@@ -1,6 +1,7 @@
+@import '~https://fonts.googleapis.com/icon?family=Material+Icons';
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
 @import "./styles/loading.scss";
 @import "./styles/spiner.scss";
-@import '~@angular/material/prebuilt-themes/indigo-pink.css';
 
 // deeppurple-amber.css
 // indigo-pink.css
@@ -10,6 +11,6 @@
 body {
     background:lightgray;
     font-family: 'Roboto', Arial, sans-serif;
-    margin: 0 auto;
+        margin: 0 auto;
     padding: 0 auto;
 }
