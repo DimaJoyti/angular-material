@@ -8,9 +8,9 @@ import { TableComponent } from './pages/table/table.component';
 
 const routes: Routes = [
   { path: '',      component: ProductComponent },
-  { path: 'login', component: LoginComponent, },
   { path: 'chat',  component: ChatDialogComponent, },
   { path: 'table',  component: TableComponent, },
+  { path: 'login', component: LoginComponent, },
   { path: '**',    redirectTo: '' }
 ];
 

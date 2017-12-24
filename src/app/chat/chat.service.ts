@@ -1,6 +1,5 @@
 import { Injectable } from "@angular/core";
 import { ApiAiClient } from "api-ai-javascript";
-import { environment } from "../../../environments/environment.prod";
 
 import { Observable } from "rxjs/Observable";
 import { BehaviorSubject } from "rxjs/BehaviorSubject";

@@ -8,9 +8,9 @@ import { ProfileComponent } from "./profile/profile.component";
 import { PostsComponent } from './posts/posts.component';
 import { TableComponent } from './table/table.component';
 import { TableService } from "../core/table/table.service";
-import { ContentfulService } from "./content/service/contentful.service";
-import { MdToHtmlPipe } from './content/pipe/md-to-html.pipe';
-import { ContentComponent } from './content/component/content/content.component';
+import { ContentComponent } from "./content/content.component";
+import { ContentfulService } from "./content/contentful.service";
+import { MdToHtmlPipe } from "./content/md-to-html.pipe";
 
 @NgModule({
   imports: [
@@ -25,7 +25,7 @@ import { ContentComponent } from './content/component/content/content.component'
     ProfileComponent,
     PostsComponent,
     TableComponent,
-    MdToHtmlPipe,
+    MdToHtmlPipe
   ],
   providers: [TableService, ContentfulService]
 })

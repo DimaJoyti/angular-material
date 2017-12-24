@@ -2,8 +2,8 @@ import { Injectable } from '@angular/core';
 import * as contentful from 'contentful';
 import * as marked from 'marked';
 import { Observable } from 'rxjs/Observable';
+import { environment } from '../../../environments/environment';
 
-import { environment } from '../../../../environments/environment.prod';
 
 @Injectable()
 export class ContentfulService {
