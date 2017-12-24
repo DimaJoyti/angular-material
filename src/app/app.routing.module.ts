@@ -9,7 +9,7 @@ import { TableComponent } from './pages/table/table.component';
 const routes: Routes = [
   { path: '',      component: ProductComponent },
   { path: 'chat',  component: ChatDialogComponent, },
-  { path: 'table',  component: TableComponent, },
+  { path: 'table', component: TableComponent, },
   { path: 'login', component: LoginComponent, },
   { path: '**',    redirectTo: '' }
 ];

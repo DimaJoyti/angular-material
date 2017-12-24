@@ -19,7 +19,9 @@
       "tsconfig": "tsconfig.app.json",
       "testTsconfig": "tsconfig.spec.json",
       "styles": ["styles.scss", "theme.scss"],
-      "scripts": [],
+      "scripts": [
+        "../node_modules/hammerjs/hammer.min.js"
+      ],
       "prefix": "",
       "environmentSource": "environments/environment.ts",
       "environments": {

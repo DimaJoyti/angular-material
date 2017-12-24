@@ -8,6 +8,7 @@ import { FormlyMaterialModule } from "@ngx-formly/material";
 
 import { HeaderComponent } from "./header/header.component";
 import { FooterComponent } from "./footer/footer.component";
+import { FormlyComponent } from "./forms/formly/formly.component";
 
 @NgModule({
   imports: [
@@ -19,7 +20,7 @@ import { FooterComponent } from "./footer/footer.component";
     FormlyModule.forRoot(),
     FormlyMaterialModule
   ],
-  exports: [HeaderComponent, FooterComponent],
-  declarations: [HeaderComponent, FooterComponent]
+  exports: [HeaderComponent, FooterComponent, FormlyComponent],
+  declarations: [HeaderComponent, FooterComponent, FormlyComponent]
 })
 export class LayoutModule {}

@@ -1,0 +1,19 @@
+<div class="container">
+  <form 
+    [formGroup]="contactForm"
+    (ngSubmit)="submitForm(contactModel)">
+    <formly-form
+      [model]="contactModel" 
+      [fields]="contactFields"
+      [form]=contactForm>
+        <button [disabled]="contactForm.invalid" type="submit"
+          m-raised-button>Submit Form</button>
+    </formly-form>
+  </form>
+
+  <div class="code">
+    <h1>Model</h1>
+    <pre>Contact: {{ contactModel | json}}</pre>
+    <pre>Form is valid: {{ contactForm.valid ? 'Yes' : 'No'}}</pre>
+  </div>
+</div>
