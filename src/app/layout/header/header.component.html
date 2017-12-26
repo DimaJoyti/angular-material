@@ -11,7 +11,7 @@
       <mat-icon>delete</mat-icon>
     </button>
   </div>
-  
+
   <div class="list-container">
     <div @items class="box" (click)="remove(i)" 
       *ngFor="let item of list; let i=index;">
@@ -72,7 +72,7 @@
 </mat-toolbar>
 
 <mat-menu #Menu="matMenu">
-  <button mat-menu-item routerLink="/login">
+  <button mat-menu-item (click)="openModal()">
     <mat-icon>fingerprint</mat-icon>
     <span>Login</span>
   </button>
@@ -84,7 +84,7 @@
     <mat-icon>table</mat-icon>
     <span>Table</span>
   </button>
-  <button mat-menu-item (click)="changeTheme()">
+  <button mat-menu-item>
     <mat-icon>map</mat-icon>
     <span>Map</span>
   </button>
@@ -92,7 +92,7 @@
     <mat-icon>style</mat-icon>
     <span>Style</span>
   </button>
-  <button mat-menu-item>
+  <button mat-menu-item (click)="openModal()">
     <mat-icon>settings</mat-icon>
     <span>Settings</span>
   </button>
