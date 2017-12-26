@@ -1,4 +1,5 @@
 import { NgModule } from "@angular/core";
+import { FormsModule } from "@angular/forms";
 import { CommonModule } from "@angular/common";
 import { MaterialModule } from "../layout/material.module";
 import { LoginComponent } from "./login/login.component";
@@ -14,7 +15,8 @@ import { MdToHtmlPipe } from "./content/md-to-html.pipe";
 
 @NgModule({
   imports: [
-    CommonModule, 
+    CommonModule,
+    FormsModule,
     MaterialModule
   ],
   declarations: [
