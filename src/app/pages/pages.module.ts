@@ -8,7 +8,7 @@ import { ProductComponent } from "./product/product.component";
 import { ProfileComponent } from "./profile/profile.component";
 import { PostsComponent } from './posts/posts.component';
 import { TableComponent } from './table/table.component';
-import { TableService } from "../core/table/table.service";
+import { TableService } from "./table/table.service";
 import { ContentComponent } from "./content/content.component";
 import { ContentfulService } from "./content/contentful.service";
 import { MdToHtmlPipe } from "./content/md-to-html.pipe";
