@@ -5,8 +5,8 @@ import { AngularFireModule } from "angularfire2";
 import { AngularFireAuthModule } from "angularfire2/auth";
 import { AngularFirestoreModule } from "angularfire2/firestore";
 import { AngularFireDatabaseModule } from "angularfire2/database";
-import { environment } from "../../environments/environment.prod";
 
+import { environment } from "../../environments/environment";
 export const firebaseConfig = environment.firebaseConfig;
 
 @NgModule({
@@ -18,4 +18,4 @@ export const firebaseConfig = environment.firebaseConfig;
   ],
   providers: [AuthService]
 })
-export class CoreModule {}
+export class CoreModule { }

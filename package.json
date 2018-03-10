@@ -29,6 +29,7 @@
     "@ngrx/effects": "^5.2.0",
     "@ngrx/router-store": "^5.2.0",
     "@ngrx/store": "^5.2.0",
+    "@ngrx/store-devtools": "^5.2.0",
     "@ngx-formly/core": "^2.0.0-rc.36",
     "@ngx-formly/material": "^2.0.0-rc.36",
     "angularfire2": "^5.0.0-rc.6",

@@ -16,7 +16,10 @@ import { AppComponent } from "./app.component";
 import { HeaderComponent } from "./layout/header/header.component";
 import { FooterComponent } from "./layout/footer/footer.component";
 import { SidenavComponent } from "./layout/sidenav/sidenav.component";
-import { MessagingService } from "./core/massaging/messaging.service";
+import { MessagingService } from './core/massaging/messaging.service';
+
+import { AppStoreModule } from "./store/app.store.module";
+
 
 @NgModule({
   declarations: [
@@ -30,9 +33,10 @@ import { MessagingService } from "./core/massaging/messaging.service";
     PagesModule,
     LayoutModule,
     CoreModule,
-    ChatModule
+    ChatModule,
+    AppStoreModule
   ],
   providers: [MessagingService],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }
