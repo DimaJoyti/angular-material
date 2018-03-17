@@ -8,8 +8,8 @@ import {
   stagger,
   animateChild
 } from "@angular/animations";
-import { LoginComponent } from "../../pages/login/login.component";
 import { MatDialog } from "@angular/material";
+import { LoginComponent } from "../../auth/login/login.component";
 
 @Component({
   selector: "header",
@@ -47,7 +47,7 @@ export class HeaderComponent {
   counter = 5;
   list = [];
 
-  constructor(public dialog: MatDialog){}
+  constructor(public dialog: MatDialog) { }
 
   add() {
     this.list.push(this.counter++);
@@ -63,7 +63,8 @@ export class HeaderComponent {
   }
 
   openModal() {
-    this.dialog.open(LoginComponent, { 
-      data: { name: "Angular Material" } });
+    this.dialog.open(LoginComponent, {
+      data: { name: "Angular Material" }
+    });
   }
 }

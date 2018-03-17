@@ -16,9 +16,10 @@ import { AppComponent } from "./app.component";
 import { HeaderComponent } from "./layout/header/header.component";
 import { FooterComponent } from "./layout/footer/footer.component";
 import { SidenavComponent } from "./layout/sidenav/sidenav.component";
-import { MessagingService } from './core/massaging/messaging.service';
 
 import { AppStoreModule } from "./store/app.store.module";
+import { AngularFireModule } from "angularfire2";
+import { environment } from "../environments/environment";
 
 
 @NgModule({
@@ -26,7 +27,7 @@ import { AppStoreModule } from "./store/app.store.module";
     AppComponent
   ],
   imports: [
-    AgmCoreModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
     BrowserModule.withServerTransition({ appId: "APP_ID" }),
     RoutingModule,
     HttpClientModule,
@@ -34,9 +35,10 @@ import { AppStoreModule } from "./store/app.store.module";
     LayoutModule,
     CoreModule,
     ChatModule,
+    AgmCoreModule,
     AppStoreModule
   ],
-  providers: [MessagingService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

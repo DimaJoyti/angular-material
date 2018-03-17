@@ -2,10 +2,7 @@ import { NgModule } from "@angular/core";
 import { FormsModule } from "@angular/forms";
 import { CommonModule } from "@angular/common";
 import { MaterialModule } from "../layout/material.module";
-import { LoginComponent } from "./login/login.component";
-import { RegistrationComponent } from "./registration/registration.component";
 import { ProductComponent } from "./product/product.component";
-import { ProfileComponent } from "./profile/profile.component";
 import { PostsComponent } from './posts/posts.component';
 import { TableComponent } from './table/table.component';
 import { TableService } from "./table/table.service";
@@ -22,9 +19,6 @@ import { MdToHtmlPipe } from "./content/md-to-html.pipe";
   declarations: [
     ProductComponent,
     ContentComponent,
-    LoginComponent,
-    RegistrationComponent,
-    ProfileComponent,
     PostsComponent,
     TableComponent,
     MdToHtmlPipe

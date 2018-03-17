@@ -35,6 +35,12 @@ export class AuthService {
     });
   }
 
+  emailSignIn(email: string, password: string) {
+    return this.afAuth.auth.signInWithEmailAndPassword(email, password)
+      .then(() => console.log("You hav successfully signed in"))
+      .catch(error => console.log(error.massage))
+  }
+
   googleLogin() {
     const provider = new firebase.auth.GoogleAuthProvider();
     return this.oAuthLogin(provider);
@@ -51,7 +57,7 @@ export class AuthService {
     const userRef: AngularFirestoreDocument<any> = this.afs.doc(
       `users/${user.uid}`
     );
-    
+
     const data: User = {
       uid: user.uid,
       email: user.email,
@@ -63,8 +69,10 @@ export class AuthService {
   }
 
   signOut() {
-    this.afAuth.auth.signOut().then(() => {
-      this.router.navigate(["/"]);
-    });
+    return this.afAuth.auth.signOut()
+      .then(() => {
+        this.router.navigate(["/"]);
+      });
   }
+
 }
